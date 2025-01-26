@@ -22,17 +22,17 @@ The project also explores the optimization of the stitching pipeline for improve
 
 - `matching_result`: Contains the output of feature matching between images. It typically includes visualizations of matched keypoints and their corresponding matches across images.
   - Example:
-    ![Matching Result](matching_result/sift/data3.jpg)  
+    ![Matching Result](matching_result/local_window/data3.jpg)  
     *Figure 1: Visual representation of feature matching between two images.*
 
 - `sift`: Contains the SIFT feature maps generated for each image, showing the detected keypoints and descriptors used for matching.
   - Example:
-    ![SIFT Keypoints](result/sift/data3.jpg)  
+    ![SIFT Keypoints](matching_result/sift/data3.jpg)  
     
 
 - `result`: Contains the final stitched panorama images produced by merging all input images.
   - Example:
-    ![Final Result](result/sift/data4.jpg)  
+    ![Final Result](result/sift/data3.jpg)  
    
 
 ### Notebooks and Scripts
