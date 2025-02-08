@@ -1,4 +1,4 @@
-# Panorama Stitching
+# Panorama Stitching Pro: SIFT-Based Feature Detection, Homography Estimation, and Seamless Image Blending
 
 ## Overview
 
