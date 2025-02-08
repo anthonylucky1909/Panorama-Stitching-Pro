@@ -62,8 +62,8 @@ The project also explores the optimization of the stitching pipeline for improve
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/anthonyhuang19/Panorama-Stitching.git
-   cd Panorama-Stitching
+   git clone [https://github.com/anthonyhuang19/Panorama-Stitching.git](https://github.com/anthonyhuang19/Panorama-Stitching-Pro.git)
+   cd Panorama-Stitching-Pro
    ```
 2. Set up the environment:
    ```bash
