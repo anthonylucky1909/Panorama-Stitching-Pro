@@ -1,84 +1,71 @@
-# 🌄 **Panorama Stitching Pro: SIFT-Based Feature Detection, Homography Estimation, and Seamless Image Blending** 🖼️✨
+# 🌄 Panorama Stitching Pro  
 
-## 🧐 **Overview**
+[![License](https://img.shields.io/github/license/anthonylucky1909/Panorama-Stitching-Pro.svg)](LICENSE)  
+[![Python](https://img.shields.io/badge/Python-3.9+-blue?logo=python&logoColor=white)](https://www.python.org/)  
+[![OpenCV](https://img.shields.io/badge/OpenCV-Computer%20Vision-green?logo=opencv)](https://opencv.org/)  
+[![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange?logo=jupyter)](https://jupyter.org/)  
 
-This project focuses on creating a panorama by stitching multiple images together using feature detection and matching techniques. The goal is to align and merge images seamlessly, producing high-quality panoramic images. The project leverages advanced computer vision methods, including:
+---
 
-- **🔍 Feature detection** using algorithms like SIFT (Scale-Invariant Feature Transform)
-- **🔗 Feature matching** to align corresponding points across images
-- **🌐 Homography estimation** to transform images into a common plane
-- **🔄 Image blending** to merge overlapping regions smoothly
+## 🧐 Overview  
 
-The project also explores the optimization of the stitching pipeline for improved accuracy and performance. 🚀
+**Panorama Stitching Pro** creates seamless panoramas by aligning and merging multiple images.  
+It leverages **SIFT-based feature detection**, **homography estimation**, and **multi-band blending** for high-quality results.  
 
-## 📂 **Files and Directory Structure**
+✨ Core pipeline:  
+- 🔍 **Feature Detection (SIFT)**  
+- 🔗 **Feature Matching & Alignment**  
+- 🌐 **Homography Estimation**  
+- 🔄 **Seamless Image Blending**  
 
-### 🖼️ **Data**
+<details>
+<summary>📸 Example Outputs</summary>
 
-- `data1`, `data2`, `data3`, `data4`: These directories contain the raw image datasets used for stitching into a panorama. 📸
-- `data.xlsx`: A data file that includes metadata about the images, such as image properties, filenames, or transformations applied during the project. 📊
+**Feature Matching**  
+![Matching Result](matching_result/local_window/data3.jpg)  
 
-### 💡 **Results and Intermediate Outputs**
+**SIFT Keypoints**  
+![SIFT Keypoints](matching_result/sift/data3.jpg)  
 
-- `matching_result/`: Contains the output of feature matching between images, including visualizations of matched keypoints and their corresponding matches across images. 🔑
-  - Example:
-    ![Matching Result](matching_result/local_window/data3.jpg)  
-    *Figure 1: Visual representation of feature matching between two images.* 🔍
+**Final Panorama**  
+![Final Result](result/sift/data3.jpg)  
 
-- `sift/`: Contains the SIFT feature maps generated for each image, showing the detected keypoints and descriptors used for matching. 🎯
-  - Example:
-    ![SIFT Keypoints](matching_result/sift/data3.jpg)  
-    *Figure 2: SIFT keypoints detected in an input image.* ✨
+</details>
 
-- `result/`: Contains the final stitched panorama images produced by merging all input images. 🖼️
-  - Example:
-    ![Final Result](result/sift/data3.jpg)  
-    *Figure 3: Final panorama image produced by the pipeline.* 🌟
+---
 
-### 📝 **Notebooks and Scripts**
+## ⚙️ Setup & Run  
 
-- `Panorama_Stitching.ipynb`: Implements the core functionality for panorama stitching, including feature detection, descriptor matching, homography computation, and image blending. 💻
-- `main.ipynb`: The main notebook orchestrating the panorama stitching process, loading data, and processing images step-by-step. 🧑‍💻
-
-### 📚 **Documentation and Reports**
-
-- `Homework2_2024.pdf`: A report that describes the project methodology, challenges, results, and conclusions. 📄
-- `22421378.pdf`: Another document related to the project, possibly containing references or supplementary material. 📑
-- `pdf_report.pdf`: The final detailed report summarizing the project findings and performance evaluation. 📋
-
-### 🛠️ **Environment and Dependencies**
-
-- `envs.yml`: A Conda environment file for creating a virtual environment that matches the dependencies required for the project. You can create the environment with the following command:
-  ```bash
-  conda env create -f envs.yml
-
-- `requirements.txt`: Contains a list of Python dependencies needed to run the project. Install them using:
-  ```bash
-  pip install -r requirements.txt
-  ```
-
-## 🚀 **Running the Project**
-
-1. **Clone the repository**:
+1. **Clone the repo**  
    ```bash
-   git clone [https://github.com/anthonyhuang19/Panorama-Stitching.git](https://github.com/anthonyhuang19/Panorama-Stitching-Pro.git)
+   git clone https://github.com/anthonylucky1909/Panorama-Stitching-Pro.git
    cd Panorama-Stitching-Pro
    ```
 
-2. **Set up the environment**:
+2. **Set up environment** (choose one)  
    ```bash
    conda env create -f envs.yml
    conda activate panorama_env
    ```
+   or  
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-3. **Run the Jupyter notebooks** to execute the panorama stitching pipeline:
+3. **Run notebooks**  
    ```bash
    jupyter notebook
    ```
+   Open `main.ipynb` or `Panorama_Stitching.ipynb` to execute the pipeline.  
 
-4. **View the results** in the `result/` directory. 📂
+4. **View results** in the `result/` folder.  
 
-## 📚 **References**
+---
 
-For more details, refer to `pdf_report.pdf`. 📖
+## 📚 References  
 
+- 📖 [SIFT Paper (Lowe, 2004)](https://www.cs.ubc.ca/~lowe/papers/ijcv04.pdf)  
+- 📖 OpenCV Documentation – [Feature Detection & Description](https://docs.opencv.org/master/db/d27/tutorial_py_table_of_contents_feature2d.html)  
+- Detailed methodology: see [`pdf_report.pdf`](pdf_report.pdf)  
+
+---
